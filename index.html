@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Suraj Reddy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7578d507d1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar and Background Picture -->
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/SRlogo.png" class="logo" alt="Suraj Reddy">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="home-text">
+                <div class="info">
+                    <h1>Hi! I'm <span>Suraj Reddy</span></h1>
+                    <p>Full Stack Web Developer</p>
+                    <a href="IMAGES/WEB_Jspiders_resume.pdf" download class="btn btn3">Download CV</a>
+                </div>
+                <!-- <div class="sr-img">
+                    <img src="/IMAGES/My_Pic.jpeg" alt="Profile Images...">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        var sm = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sm.style.right = "0";
+        }
+        function closemenu() {
+            sm.style.right = "-200px";
+        }
+    </script>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="ab-col-1">
+                    <img src="IMAGES/IMG_crop.JPG" alt="My Pic">
+                </div>
+                <div class="ab-col-2">
+                    <h1 class="subs">About Me</h1>
+                    <p>
+                        In the realm of computer science, I
+                        flourish as a Full Stack Web Developer and also a Java Full Stack Developer, adopt in
+                        coding and driven by an insatiable
+                        thirst for knowledge. Embracing
+                        multitasking effortlessly, I am a fast
+                        learner, capable team leader, and
+                        flexible individual who thrives in
+                        dynamic environments.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick=" openabout('Skills')">Skills</p>
+                        <p class=" tab-links" onclick="openabout('Experience')">Works</p>
+                        <p class=" tab-links" onclick="openabout('Education')">Education</p>
+                    </div>
+                    <div class=" tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Crafting the web interface with HTML, CSS, and
+                                JavaScript.</li>
+                            <li><span>Programming Languages</span><br>Good Knowledge on Core Java, C/C++, SQL and MySQL.
+                            </li>
+                            <li><span>Frameworks</span><br>Familar with MongoDB, ReactJS, NodeJS, ExpressJS, RESTful
+                                API, JDBC, Servlets, Hibernate, Spring, Spring Boot.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Internship</span><br>Participated in the Internship Program by Raise Digital</li>
+                            <li><span>Google Certificate</span><br>Earned Certificate on Foundation of User Experience
+                                (UI) Design Course from Google</li>
+                            <li><span>Meta Certificate</span><br>Certified Front and Back Development from
+                                Meta on Coursera</li>
+                            <li><span>Project Completion</span><br>Made Simple and Advance Ecommerce Webpage as a
+                                Project in the Internship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.E in CS&E</span><br>Pursued my Bachelor's degree in SJCIT and secured 8.9CGPA.
+                            </li>
+                            <li><span>12th</span><br>Studied in Shree Guru Independent PU college of science and secured
+                                79.83% in the Stream of PCMB.
+                            </li>
+                            <li><span>10th</span><br>Studied in N.V English Medium School and secured 81.12%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services.... -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subs">Ready to Work </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>Full Stack Web Developer</h2>
+                    <p>Ready to work as a Full Stack Web Developer, I am familiar with technologies like HTML, CSS, and
+                        JS, and also proficient in frameworks like MongoDB, ReactJS, NodeJS, ExpressJS, and RESTful API.
+                    </p>
+                    <!-- <a href="#">Learn More...</a> -->
+                </div>
+                <div>
+                    <i class="fa fa-crop" aria-hidden="true"></i>
+                    <h2>Full Stack Java Developer</h2>
+                    <p>
+                        Ready to work as a Full Stack Java Developer, I am familiar with technologies like Core Java,
+                        SQL, MySQL, and also proficient in frameworks like JDBC, Servlets, Hibernate, Spring, Spring
+                        Boot and RESTful API</p>
+                    <!-- <a href="#">Learn More...</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Software Developer</h2>
+                    <p>Ready to work as a Software Developer, I am familiar with technologies like Basics of Python, SDLC, Java, and SQL, and also proficient in frameworks like Spirng, Spring Boot, Hibernate, and Servlets</p>
+                    <!-- <a href="#">Learn More...</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subs">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="IMAGES/mens-wardrobe.jpg" alt="">
+                    <div class="layer">
+                        <h3>Glitch Clothing Store</h3>
+                        <p>Made a Website for my future startup as it is a demo version of my clothing website </p>
+                        <a href="https://glitchandco.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/wallpaperflare.com_wallpaper (4).jpg" alt="">
+                    <div class="layer">
+                        <h3>Gaming Website</h3>
+                        <p>
+                            In addition to My YouTube channel Curly Spy, I have built a gaming website that serves
+                            as a platform for viewers to interact and explore the website with full of Games and can
+                            watch my Videos.
+                        </p>
+                        <a href="https://curlyspy.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/wind-weathervane-weather-vane.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather Forecasting App</h3>
+                        <p> This apps typically use
+                            data from weather stations, satellites, and other sources to generate weather forecasts for
+                            specific locations. Users can access the app to get
+                            information about the temperature and metrics</p>
+                        <a href="https://weepy-weather.netlify.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#portfolio" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="cont-left">
+                    <h1 class="subs">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>cks19012003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8660465403</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/suraj-reddy1901/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SurajReddy1901"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/suraj_reddy.exe/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.hackerrank.com/surajreddy1901"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.codingninjas.com/codestudio/profile/SURAJ_REDDY"><i
+                                class="fa-solid fa-c"></i>
+                    </div>
+                    <a href="IMAGES/WEB_Jspiders_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="cont-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button onclick="respondUser()" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p>Copyright &copy; Suraj Reddy || Made with <i class="fa-solid fa-heart"></i> by <span>SR Designs</span>
+            </p>
+        </div> -->
+    </div>
+    <!-- Contact Scripting -->
+    <script>
+        const msg = document.getElementById("msg");
+        function respondUser(){
+            msg.innerHTML = "Sent Successfully!!";
+        }
+
+    </script>
+</body>
+
+</html>
